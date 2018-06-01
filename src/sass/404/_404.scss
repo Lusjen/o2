@@ -1,0 +1,47 @@
+.not-found {
+    .page-hero {
+        height: 100vh;
+        background-image: url('../img/404/not-found_hero_bg.jpg');
+    }
+}
+.not-found-container {
+    max-width: 672px;
+    margin: 160px auto 0px;
+    text-align: center;
+}
+
+.not-found__image {
+    &::after {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 90px;
+        margin: 50px auto 18px;
+        background-color: rgba(225, 255, 255, 0.4);
+    }
+}
+.not-found__msg {
+    margin-bottom: 45px;
+}
+
+.not-found-btn {
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 7px 0px;
+    text-align: center;
+    font-size: 0.75rem;
+    transition: background-color $transitionTime;
+    &:hover {
+        background-color: $lightgreen;
+    }
+}
+
+.not-found-btn__main {
+    width: 180px;
+}
+
+.not-found-btn__back {
+    width: 300px;
+    margin-left: 20px;
+}

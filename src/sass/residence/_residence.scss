@@ -1,0 +1,202 @@
+.residences {
+    .page-hero {
+        background-image: url('../img/residence/residence_hero_bg.jpg');
+    }
+}
+.residence {
+    color: #000;
+    border: 1px solid #ccc;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    &.animate-me {
+        .residence__text {
+            opacity: 0;
+            transform: scale(0.4);
+        }
+        // &.residence-1,
+        // &.residence-3,
+        // &.residence-5 {
+        //     .residence__image {
+        //         opacity: 0;
+        //         transform: translate(-200px);
+        //     }
+        // }
+        // &.residence-2,
+        // &.residence-4 {
+        //     .residence__image {
+        //         opacity: 0;
+        //         transform: translate(200px);
+        //     }
+        // }
+    }
+}
+.residence__image {
+    width: 45%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all $transitionTime3;
+}
+.residence-1 {
+  .residence__image {
+      background-image: url('../img/residence/residence_1.jpg');
+  }  
+}
+.residence-2 {
+    .residence__image {
+        background-image: url('../img/residence/residence_2.jpg');
+    }  
+}
+.residence-3 {
+    .residence__image {
+        background-image: url('../img/residence/residence_3.jpg');
+    }  
+}
+.residence-4 {
+    .residence__image {
+        background-image: url('../img/residence/residence_4.jpg');
+    }  
+}
+.residence-5 {
+    .residence__image {
+        background-image: url('../img/residence/residence_5.jpg');
+    }  
+}
+.residence__text-heading {
+    line-height: 36px;
+    letter-spacing: 0.6px;
+    &::after {
+        background-color: #000;
+        margin: 15px 0px;
+    }
+}
+.residence__paragraph {
+    line-height: 30px;
+    letter-spacing: 0.4px;
+    span {
+        font-weight: 600;
+    }
+}
+.residence__text {
+    padding: 0px 35px;
+    width: 55%;
+    border-left: none;
+    transition: all $transitionTime3;
+}
+
+.residence-2 {
+    .residence__text {
+        border-right: none;
+    }
+}
+
+.residence-4 {
+    .residence__text {
+        border-right: none;
+    }
+}
+
+.residence__conclusion {
+    margin: 40px 0;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/residence/residence_bottom_bg.jpg');
+    padding: 10px;
+    &.animate-me {
+        .residence__list-text {
+            opacity: 0;
+            transform: translateX(200px);
+        }
+        .residence__list-icon {
+            opacity: 0;
+        }
+    }
+}
+.residence__logo {
+    width: 80px;
+}
+.residence__conclusion-inner-frame {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    padding: 70px 0px 0px 95px;
+}
+.residence__list {
+    margin-top: 64px;
+}
+.residence__list-item {
+    margin-bottom: 25px;
+}
+.residence__list-text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2.25rem;
+    font-weight: 300;
+    &::before {
+        content: '';
+        display: inline-block;
+        margin-right: 40px;
+        width: 1px;
+        height: 36px;
+        background-color: #fff;
+        vertical-align: middle;
+    }
+}
+.residence__list-item_1 {
+    .residence__list-icon {
+        transition: all $transitionTime3 0.5s;
+    }
+    .residence__list-text {
+        transition: all $transitionTime3;
+    }
+}
+.residence__list-item_2 {
+    .residence__list-icon {
+        transition: all $transitionTime3 0.8s;
+    }
+    .residence__list-text {
+        transition: all $transitionTime3 0.3s;
+    }
+}
+.residence__list-item_3 {
+    .residence__list-icon {
+        transition: all $transitionTime3 1.1s;
+    }
+    .residence__list-text {
+        transition: all $transitionTime3 0.6s;
+    }
+}
+
+.residence__list-icon-container {
+    width: 106px;
+    height: 60px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.residence__list-icon {
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url('../img/residence/residence_spritesheet.png');
+}
+
+.residence__list-icon-1 {
+    margin-top: 8px;
+    width: 68px;
+    height: 39px;
+    background-position: -2px -1px;
+}
+.residence__list-icon-2 {
+    width: 62px;
+    height: 57px;
+    background-position: -74px -1px;
+}
+.residence__list-icon-3 {
+    margin: 10px 0px 0px 12px;
+    width: 40px;
+    height: 40px;
+    background-position: -140px -2px;
+}

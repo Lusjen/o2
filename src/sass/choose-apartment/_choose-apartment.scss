@@ -1,0 +1,47 @@
+.stub {
+    .page-hero {
+        height: 100vh;
+        background-image: url('../img/choose-apartment/choose-apartment_hero_bg.jpg');
+    }
+}
+.stub-container {
+    max-width: 510px;
+    margin: 100px auto 0px;
+    text-align: center;
+}
+
+.stub_image {
+    &::after {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 90px;
+        margin: 50px auto 18px;
+        background-color: rgba(225, 255, 255, 0.4);
+    }
+}
+.stub__msg {
+    margin-bottom: 45px;
+}
+
+.stub-btn {
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 7px 0px;
+    text-align: center;
+    font-size: 0.75rem;
+    transition: background-color $transitionTime;
+    &:hover {
+        background-color: $lightgreen;
+    }
+}
+
+.stbu-btn__main {
+    width: 180px;
+}
+
+.stbu-btn__back {
+    width: 300px;
+    float: right;
+}

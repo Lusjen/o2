@@ -1,0 +1,197 @@
+.header {
+    overflow: visible;
+}
+.header-container {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    padding-top: 5px;
+    transition: all $transitionTime;
+    &.header__fixed {
+        position: fixed;
+        z-index: 2;
+        background-color: rgba(0,0,0,0.6);
+        .logo {
+            width: 50px;
+        }
+    }
+}
+.header__fixed {
+    transition: all $transitionTime;
+    .lang {
+        top: 25px;
+    }
+}
+
+.logo {
+    width: 80px;
+    transition: all $transitionTime;
+    img {
+        width: 100%;
+    }
+}
+
+.nav {
+    >ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.nav__item {
+    margin-left: 30px;
+}
+.nav__item-telephone {
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+.nav__btn {
+    a {
+        text-align: center;
+        height: 32px;
+        line-height: 32px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 5px;
+        font-size: 0.75rem;
+        display: block;
+        transition: background-color $transitionTime;
+        &:hover {
+            background-color: $green;
+        }
+    }
+}
+.nav__item-camera {
+    a {
+        width: 120px;
+    }
+    .nav__item-camera_icon {
+        display: inline-block;
+        width: 14px;
+        height: 16px;
+        background-image: url('../img/main/camera.png');
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+}
+.nav__item-callback {
+    a {
+        width: 180px;
+    }
+}
+.nav__item-callback-mobile {
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url('../img/common/phone_icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.nav__item-3d {
+    &:hover {
+        .nav__3d-text {
+            background-color: $lightgreen;
+        }
+    }
+    a {
+        width: 120px;
+    }
+}
+.nav__3d-text {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    line-height: 21px;
+    border-radius: 50%;
+    background-color: $green;
+    margin-left: 7px;
+    transition: background-color $transitionTime;
+}
+.nav__item-lang {
+    font-size: 0.75rem;
+    height: 32px;
+    width: 75px;
+    position: relative;
+    display: inline-block;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.lang-list {
+    position: absolute;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    height: 32px;
+    width: 50px;
+    line-height: 32px;
+    overflow: hidden;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: height $transitionTime;
+}
+.lang-item {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all $transitionTime;
+    &:hover {
+        background-color: $green;
+    }
+}
+.nav__item-lang-icon {
+    width: 13px;
+    height: 10px;
+    background-image: url('../img/common/arrow.png');
+    background-repeat: no-repeat;
+    float: right;
+    margin-top: 10px;
+    transition: transform $transitionTime;
+}
+.nav__item-lang_opened {
+    .lang-list {
+        height: 96px;
+    }
+    .lang-item {
+        background-color: rgba(0,0,0,0.5);
+        &:hover {
+            background-color: $green;
+        }
+    }
+    .nav__item-lang-icon {
+        transform: rotate(175deg);
+    }
+}
+
+.nav__item_menu {
+    width: 60px;
+    font-size: 0.75rem;
+    .menu__line {
+        height: 2px;
+        background-color: #fff;
+        transition: all $transitionTime;
+        width: 100%;
+ 
+    }
+    .menu__line_1 {
+    }
+    .menu__line_2 {
+        width: 60%;
+        margin: 5px 0px;
+    }
+    .menu__line_3 {
+        width: 100%;
+    }
+    &:hover {
+        cursor: pointer;
+        .menu__line_1 {
+            width: 60%;
+        }
+        .menu__line_2 {
+            width: 40%;
+        }
+        .menu__line_3 {
+            width: 20%;
+        }
+    }
+}

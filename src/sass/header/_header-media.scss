@@ -1,0 +1,29 @@
+@media only screen and(max-width: 1024px) {
+    .nav {
+        min-width: auto;
+    }
+    .nav__item-camera, 
+    .nav__item-3d,
+    .nav__item-lang {
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .nav__item-telephone {
+        font-size: 1rem;
+    }
+    .nav__item-callback {
+        display: none;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .nav {
+        width: 80%;
+    }
+    .logo {
+        width: 50px;
+    }
+    .nav__item {
+        margin-left: 0;
+    }
+}

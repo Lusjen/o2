@@ -1,0 +1,205 @@
+.commercial {
+    .page-hero {
+        background-image: url('../img/commercial/commercial_bg.jpg');
+    }
+}
+.commercial__wrapper {
+    color: #000;
+}
+.commercial__paragraph {
+    letter-spacing: 0.45px;
+    line-height: 26px;
+    font-size: 1.125rem;
+}
+
+.commercial__about {
+    margin-top: 40px;
+}
+.commercial__about-container {
+    border: 1px solid #cbcbcb;
+    display: flex;
+}
+.commercial__about-image,
+.commercial__about-text {
+    width: 50%;
+    span {
+        font-weight: 600;
+    }
+}
+.commercial__about-paragraph {
+    margin-top: 45px;
+}
+.commercial__about-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.commercial__about-image_1 {
+    background-image: url('../img/commercial/commercial__about.jpg');
+}
+.commercial__about-image_2 {
+    background-image: url('../img/commercial/commercial__about_2.jpg');
+}
+.commercial__about-text {
+    border-left: none;
+    padding: 52px 69px 40px 40px
+}
+
+.commercial__item {
+    position: relative;
+    margin-top: 40px;
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+.commercial__item-text {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    border: 1px solid #cbcbcb;
+    width: 100%;
+    transition: all $transitionTime2;
+    &:hover {
+        cursor: pointer;
+        background-color: $lightgreen;
+        .commercial-icon {
+            fill: #fff;
+        }
+    }
+}
+.commercial__item-text-container {
+    padding: 60px;
+}
+.commercial__heading-container {
+    margin-bottom: 45px;
+    display: flex;
+    align-items: center;
+    width: 400px;
+}
+.commercial__item-icon-container {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+.commercial-icon {
+    fill: $lightgreen;
+    transition: all $transitionTime2;
+
+}
+.commercial__heading-line {
+    width: 1px;
+    height: 60px;
+    background-color: #000;
+    margin-right: 15px;
+}
+.commercial__heading {
+    letter-spacing: 0.9px;
+    line-height: 42px;
+    font-weight: 700;
+    font-size: 2.25rem;
+}
+
+
+.commercial__item-sub-msg {
+    margin-bottom: 40px;
+    letter-spacing: 0.45px;
+    font-size: 1.125rem;
+}
+
+.commercial__restaraunts {
+    max-width: 350px;
+}
+
+.commercial__item-image {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 50%;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: none;
+    transition: all $transitionTime3;
+}
+.commercial__item-image_restaraunts {
+    background-image: url('../img/commercial/commercial_restaraunts_img.jpg');
+}
+.commercial__item-image_shops {
+    background-image: url('../img/commercial/commercial_shops_img.jpg');
+}
+.commercial__item-image_hospitals {
+    background-image: url('../img/commercial/commercial_hospitals.jpg');
+}
+.commercial__item-image_education {
+    background-image: url('../img/commercial/commercial_education_img.jpg');
+}
+.commercial__item-image_service {
+    background-image: url('../img/commercial/commercial_service_img.jpg');
+}
+.commercial__item-image_right {
+    float: right;
+    margin-right: 20px;
+}
+
+.commercial__item-image_left {
+    margin-left: 20px;
+}
+
+.commercial__item-text-container_right {
+    width: 455px;
+    float: right;
+}
+
+.commercial__list-heading {
+    letter-spacing: 0.45px;
+    line-height: 26px;
+    font-size: 1.125rem;
+    margin-bottom: 15px;
+}
+.commercial__list {
+    letter-spacing: 0.45px;
+    line-height: 26px;
+    font-size: 1.125rem;
+    li {
+        position: relative;
+        padding-left: 30px;
+    }
+}
+.commercial__bullet {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: currentColor;
+}
+.commercial__item-3 {
+    .commercial__item-icon-container {
+        width: 84px;
+        margin-right: 17px;
+    }
+}
+
+.commercial__about-2 {
+    margin-bottom: 40px;
+    .commercial__about-text {
+        padding: 38px 20px 36px 45px;
+    }
+    .commercial__about-image {
+        float: right;
+    }
+}
+
+.animate-me {
+    .commercial__item-image {
+        transform: perspective(50em) rotateY(90deg);
+    }
+    .commercial__item-text {
+        opacity: 0;
+    }
+}

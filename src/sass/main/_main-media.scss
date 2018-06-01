@@ -1,0 +1,183 @@
+@media only screen and (max-width: 1200px) {
+
+    .hero__bottom {
+        flex-direction: column-reverse;
+        width: auto;
+    }
+    .hero__address {
+        order: 3;
+        border: none;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .btn__order-call {
+        order: 2;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .hero__phone {
+        order: 1;
+    }
+} //desktop
+
+@media only screen and (max-width: 1024px) {
+
+    .construction-end__list {
+        justify-content: center;
+    }
+
+    .construction-end_list-item {
+        width: 50%;
+    }
+    .advantages__slide-caption {
+        height: auto;
+    }
+    .advantages__slide-caption-number {
+        width: 65px;
+        height: 65px;
+        line-height: 65px;
+    }
+    .advantages__slide-caption-text {
+        width: 300px;
+        padding: 2px;
+    }
+    .adantages__heading {
+        top:15px;
+        left: 65px;
+    }
+    .values__slide {
+        min-height: 550px;
+    }
+    .values__slide-caption-text {
+        padding: 80px 40px 0px;
+    }
+    .projects__slider {
+        max-width: 660px;
+    }
+    .dayInO2__wrapper {
+        background-position: 70%;
+    }
+
+} //tablet
+
+@media only screen and (max-width: 767px) {
+    .hero__heading {
+        font-size: 1.875rem;
+    }
+    .hero__svg-navigation {
+        display: none;
+    }
+    .hero__bottom {
+        margin: 0 auto;
+    }
+    .ThreeDMap__main {
+        width: 90%;
+        margin: 0px auto 10px;
+    }
+    .constructin-end__wrapper {
+        padding: 40px 10px 80px;
+    }
+    .construction-end_list-item {
+        width: 320px;
+        height: 100px;
+        padding-left: 90px;
+        margin: 0 auto;
+    }
+    .info__item-text {
+        padding: 15px 15px 70px 15px;
+    }
+    .info__item-image_residency {
+        background-image: url('../img/main/info_residency_bg-mob.jpg')
+    }
+    .adantages__heading {
+        top: 20px;
+        left: 25px;
+    }
+    .advantages__slide_1 {
+        background-image: url('../img/main/slider_2/1-mob.jpg')
+    }
+    .info__wrapper {
+        flex-direction: column;
+    }
+    .info__item  {
+        width: 95%;
+        margin: 40px auto 0 auto;
+    }
+    .advantages__slide {
+        height: 450px;
+        background-position: 67%;
+    }
+    .advantages__slide-caption-number {
+        width: 67px;
+        height: 67px;
+        line-height: 67px;
+    }
+    .advantages__slide-caption-text {
+        width: 230px;
+        padding:5px;
+    }
+    .values__heading {
+        left: 50px;
+        top: 0px;
+    }
+    .values__slide-caption-heading {
+        font-size: 1.875rem;
+    }
+    .values__slide-caption {
+        width: 100%;
+        background-color: rgba(0,0,0,.5);
+    }
+    .values__slide-caption-paragraph {
+        margin-top: 15px;
+        font-size: 1rem;
+    }
+    .info__item-image_eco-farm {
+        background-image: url('../img/main/info_eco-farm-mob.jpg');
+    }
+    .infrastructure__wrapper {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+    .infrastructure__items {
+        flex-direction: column;
+    }
+    .infrastructure__item {
+        width: 100%;
+        height: 305px;
+    }
+    .infrastructure__item_text {
+        width: auto;
+        height: auto;
+        padding: 10px;
+    }
+    .projects__heading {
+        line-height: 30px;
+    }
+    .projects__slider-item_rybalsky {
+        img {
+            max-width: 30%;
+        }
+    }
+    .projects__slider-item_einstein {
+        img {
+            max-width: 30%; 
+        }
+    }
+    .dayInO2__message {
+        margin-top: 15px;
+    }
+    .dayInO2__main {
+        margin: 20px;
+    }
+    .btn__dayInO2 {
+        margin-top: 20px;
+    }
+}//mobile
+
+@media only screen and (max-width: 510px) {
+    .dayInO2__wrapper {
+        min-height: 610px;
+
+        background-image: url('../img/main/dayIno2_bg-mob.jpg');
+    }
+}
