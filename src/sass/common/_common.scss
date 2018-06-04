@@ -190,6 +190,9 @@ a {
 // .preloader__logo {
 //     fill: #ffffff;
 // }
+.page-wrapper {
+    position: relative;
+}
 .page-hero {
     background-size: cover;
     background-position: center;
@@ -259,4 +262,9 @@ a {
 }
 .input__validation-error {
     border-color: $red !important;
+}
+
+.exponent {
+    vertical-align: super;
+    font-size: 0.5rem;
 }

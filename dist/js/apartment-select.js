@@ -1,0 +1,27 @@
+(function() {
+	var floorSection = document.querySelectorAll(".apartment__link"),
+	toolTip = document.querySelector(".apartment-tooltip");
+
+	function showTooltip(e) {
+		var current = e.target,
+			// top = current.getBoundingClientRect().bottom-50,
+			// left = current.getBoundingClientRect().left-20;
+			top = event.pageY+20,
+			left = event.pageX-50;
+		toolTip.style.top = top.toString() + "px";
+		toolTip.style.left = left.toString() + "px";
+		toolTip.style.opacity = "1";
+	}
+
+	function hideTooltip(e) {
+		var current = e.target;
+
+		toolTip.style.top = "3000px";
+		toolTip.style.opacity = "0";
+	}
+
+	for(var i = 0; i < floorSection.length; i++) {
+		floorSection[i].addEventListener("mouseover", showTooltip, false);
+		floorSection[i].addEventListener("mouseout", hideTooltip, false);
+	}
+})();
