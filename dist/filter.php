@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" type="text/css" href="/css/filter-page.css">
     <title>O2 Filter</title>
@@ -33,8 +33,8 @@
 
             <div class="wrapper">
               <div class="param_container1">
+                <div class="filter__mainname">Фільтр</div>
                 <div class="param_container">
-                  <div class="filter__name">Фільтр</div>
     							<!-- <a class="close" href="javascript:history.go(-1)" mce_href="javascript:history.go(-1)"><img src="/img/close.svg" alt="close" width="40px"></a> -->
                   <div class="range_box">
                       <div class="range__item">
@@ -75,8 +75,8 @@
 
                   </div>
                   <div class="checkbox__box">
+                    <div class="filter_name">Кіл-ть кімнат</div>
                     <div class="checkbox__item checkboxes__rooms">
-                      <div class="filter_name">Кіл-ть кімнат</div>
                       <input id="checkbox__room1" class="checkbox__room filter__checkbox" type="checkbox" value="1"/>
                       <label for="checkbox__room1" class="checkbox__text">1</label>
                       <input id="checkbox__room2" class="checkbox__room filter__checkbox" type="checkbox" value="2"/>
@@ -264,8 +264,8 @@
                     <a class="button" href="">Дивитися квартиру</a>
                   </li>
               </ul>
+              <a class="button filter__more" href="#">Завантажити більше планувань</a>
             </div>
-            <a class="button filter__more" href="#">Завантажити більше планувань</a>
         </section>
 
         <? include_once('includes/footer.php'); ?>
