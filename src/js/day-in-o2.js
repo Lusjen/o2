@@ -6,7 +6,7 @@ var di2 = (function() {
     var slideBars = $('.slide-bar');
     var slideCircle = $('.slide-circle');
     //video 
-    var videos = $('.di2__slider-item_video');
+    //var videos = $('.di2__slider-item_video');
 
     // setTimeout(function() {
     //   videos[0].play();
@@ -43,16 +43,16 @@ var di2 = (function() {
     $(sliderSelector).on('beforeChange', function(event, slick, currentSlide, nextSlide){
         fillActiveSlideBars(nextSlide);
         // video        
-        videos[currentSlide].pause();
-        videos[nextSlide].play();
+        // videos[currentSlide].pause();
+        // videos[nextSlide].play();
         // video
         
-        // if(nextSlide+1 === slick.slideCount) {
-        //     showScrollBar();
-        // } else {
-        //     $(document).scrollTop(0, 0)
-        //     hideScrollBar();
-        // }
+        if(nextSlide+1 === slick.slideCount) {
+            showScrollBar();
+        } else {
+            $(document).scrollTop(0, 0)
+            hideScrollBar();
+        }
       });
 
       
