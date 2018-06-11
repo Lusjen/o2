@@ -704,9 +704,22 @@ var contactsForm = (function() {
                     var urObV = "http://"+window.location.hostname+nOV;
 
                     PostFormData(urObV, data, function(res) {
-                        console.log(res);
+                        var lang=document.getElementsByTagName('html')[0].getAttribute('lang');
+                        data = $.parseJSON(res);
+                        if (data.result){
+                            if (data.page !== undefined) {
+                                window.location = data.page;
+                        }else{
+                                $('#'+id)[0].reset();
+                                $('.succses__form_text').html(data.message);
+                                $('.succses__form_info').fadeIn();
+                                setTimeout(function(){
+                                   $('.succses__form_info').fadeOut();
+                                },2000)
+                            }
+                        }
                         //Call modal window which was instanciated before
-                        successModal.showModal();
+                        //successModal.showModal();
                         //Clear all filled inputs
                         inputsArr.forEach(function(inputInstance) {
                             inputInstance.input.value = '';
