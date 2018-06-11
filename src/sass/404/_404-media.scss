@@ -1,0 +1,32 @@
+
+
+@media only screen and(max-width: 767px) {
+
+	.not-found-container {
+    	margin: 0;
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
+    	width: 505px;
+	}	
+
+	.not-found__image {
+		img {
+			max-width: 100%;
+		}
+	}
+
+}
+
+@media only screen and(max-width: 610px) {
+
+	.not-found-container {
+    	width: 300px;
+	}	
+
+	.not-found-btn {
+		width: 90%;
+		margin: 0 0 10px 0;
+	}
+}
