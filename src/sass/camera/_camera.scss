@@ -1,0 +1,33 @@
+.camera-head {
+    position: relative;
+    background: url(../img/camera/camera-bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+.camera__image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.camera-content {
+    width: 980/1200*100%;
+    margin: 0 auto;
+    padding: 30px 0 45px;
+
+    &__heading {
+        width: 100%;
+        color: $grey;
+        text-align: center;
+        margin-bottom: 28px;
+
+        &_black {
+            color: #000;
+        }
+    }
+
+    &__video {
+        width: 980px;
+        height: 415px;
+    }
+}
