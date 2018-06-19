@@ -32,6 +32,7 @@ gulp.task('all-js', function() {
 		'src/js/libs/slick.min.js',
 		'src/js/libs/magnific-popup.js',
 		'src/js/libs/imask.js',
+		'src/js/libs/ion.rangeSlider.js',
 		'src/js/useful_functions.js',
 		'src/js/common.js',
 		'src/js/commercial.js',
@@ -200,6 +201,20 @@ gulp.task('js-values', function() {
 });
 // values page task end
 
+// filter page task
+gulp.task('js-filter', function() {
+	return gulp.src([
+		'src/js/libs/ion.rangeSlider.js',
+		'src/js/useful_functions.js',
+		'src/js/filter.js',
+	])
+	.pipe(concat('filter.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'))
+	.pipe(browserSync.reload({stream: true}));
+});
+// filter page task end
+
 // main page start
 gulp.task('js', [
 	'common-js', 
@@ -213,7 +228,8 @@ gulp.task('js', [
 	'js-values',
 	'js-construction',
 	'js-location',
-	'js-choose-apartment'], function() {
+	'js-choose-apartment',
+	'js-filter',], function() {
 	return gulp.src([
 		'src/js/libs/slick.min.js',
 		'src/js/useful_functions.js',

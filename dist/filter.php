@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/filter-page/filter-page.css">
+    <!-- <link rel="stylesheet" href="css/filter-page/filter-page.css"> -->
     <link rel="stylesheet" type="text/css" href="/css/filter-page.css">
     <title>O2 Filter</title>
 </head>
@@ -274,8 +274,7 @@
 </div>
 <script src="js/common.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="js/ion.rangeSlider.js"></script>
-<script src="js/range.js"></script>
+<script src="js/filter.min.js"></script>
 
 </body>
 </html>

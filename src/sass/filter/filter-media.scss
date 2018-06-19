@@ -1,0 +1,64 @@
+@media only screen and (max-width: 1200px){
+.content_param .range_box {
+  width: 100%;
+  padding-top: 0px;
+}
+}
+@media only screen and (max-width:960px) {
+input[type="number"] {
+  margin: 10px 4px 10px;
+  }
+.result__item, .cell.is-empty {
+  width: 32%;
+  }
+}
+@media only screen and (max-width:768px){
+.range_box{
+  padding: 10px 20px 0;
+}
+.checkbox__box {
+  padding: 10px;
+}
+input[type="submit"]{
+  display: block;
+  margin: 12px auto 30px;
+}
+.result__list{
+  margin-top: 12px;
+}
+.result__item {
+  width: 49%;
+  padding: 20px 10px;
+}
+}
+@media only screen and (max-width:480px) {
+  .param_container{
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
+  .range_box{
+    width: 100%;
+    order: 1;
+  }
+  .checkbox__box {
+    width: 100%;
+    order: 0;
+  }
+  .checkboxes__rooms{
+    display: flex;
+  }
+  .button__box{
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
+  .button__box > *{
+    width: 100%;
+  }
+  .button__box .button{
+    order: 0;
+    margin: 0 auto 20px;
+  }
+  .filter_rev{
+    order: 1;
+  }
+}
