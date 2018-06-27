@@ -217,6 +217,9 @@ input::-webkit-inner-spin-button {
 .button:hover{
   background: #739444;
 }
+.button__search {
+  width: 20%;
+}
 .result__img{
   width: 90%;
   margin: 10px auto;
@@ -229,6 +232,16 @@ input::-webkit-inner-spin-button {
 .button.filter__more{
   max-width: 500px;
   margin: 20px auto 30px;
+}
+.filter__hidden-values {
+    display: none;
+}
+
+.filter__result_hidden {
+    display: none;
+}
+.filter__result_visible {
+    display: block;
 }
 
 /* Ion.RangeSlider
