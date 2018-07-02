@@ -105,8 +105,6 @@ var filterPage = (function() {
             }
         });
 
-        console.log(this.parent.find('.js-filter__range'));
-
         var slider = this.ionRange.data("ionRangeSlider");
 
         // This event handlers prevent text input in number inputs but keydown fires before it places value inside input and you need that values to update ranges
