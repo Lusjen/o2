@@ -78,6 +78,8 @@ var navFixed = (function(){
 
 
 //main drop down menu
+
+
 var dropDownMenu = (function() {
 
     var showMenuBtn = document.querySelector('.nav__item_menu');
@@ -125,6 +127,27 @@ var dropDownMenu = (function() {
         o2AppState.menuOpen = false;
         o2AppState.scrollHidden = false;
     });
+
+    var menuLink = document.querySelectorAll('.menu__nav-link-hover');
+
+    for(var k = 0; k < menuLink.length; k++) {
+        menuLink[k].addEventListener('click', function(e) {
+            hideMenu();
+            o2AppState.menuOpen = false;
+            o2AppState.scrollHidden = false;
+        });
+    }
+
+    // document.querySelectorAll('.menu__nav-link-hover').addEventListener('click', function(e) {
+    //     // hideMenu();
+    //     // o2AppState.menuOpen = false;
+    //     // o2AppState.scrollHidden = false;
+    //     e.preventDefault();
+    //     alert("sdv");
+    // });
+
+    // console.log(document.querySelectorAll('.menu__nav-link-hover'));
+
 })();
 
 //preloader logic start
