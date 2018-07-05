@@ -145,7 +145,7 @@
                 data-livingarea="20" >
                   <div class="result__item__inner">
                     <div class="result__img">
-                      <img src="/img/filter/Plan.png" alt="">
+                      <img src="img/filter/Plan.png" alt="plan">
                     </div>
                     <table style="width:100%; line-height:1.5;">
                       <tr><td>Секція</td><td>4</td></tr>
@@ -164,7 +164,7 @@
                 data-livingarea="30">
                     <div class="result__item__inner">
                       <div class="result__img">
-                        <img src="/img/filter/Plan.png" alt="">
+                        <img src="img/filter/Plan.png" alt="">
                       </div>
                       <table style="width:100%; line-height:1.5;">
                         <tr><td>Секція</td><td>4</td></tr>
@@ -183,7 +183,7 @@
                   data-livingarea="40">
                     <div class="result__item__inner">
                       <div class="result__img">
-                        <img src="/img/filter/Plan.png" alt="">
+                        <img src="img/filter/Plan.png" alt="">
                       </div>
                       <table style="width:100%; line-height:1.5;">
                         <tr><td>Секція</td><td>4</td></tr>
@@ -202,7 +202,7 @@
                   data-livingarea="50">
                     <div class="result__item__inner">
                       <div class="result__img">
-                        <img src="/img/filter/Plan.png" alt="">
+                        <img src="img/filter/Plan.png" alt="">
                       </div>
                       <table style="width:100%; line-height:1.5;">
                         <tr><td>Секція</td><td>4</td></tr>
@@ -221,7 +221,7 @@
                   data-livingarea="60">
                     <div class="result__item__inner">
                       <div class="result__img">
-                        <img src="/img/filter/Plan.png" alt="">
+                        <img src="img/filter/Plan.png" alt="">
                       </div>
                       <table style="width:100%; line-height:1.5;">
                         <tr><td>Секція</td><td>4</td></tr>
@@ -240,7 +240,7 @@
                   data-livingarea="70">
                     <div class="result__item__inner">
                       <div class="result__img">
-                        <img src="/img/filter/Plan.png" alt="">
+                        <img src="img/filter/Plan.png" alt="">
                       </div>
                       <table style="width:100%; line-height:1.5;">
                         <tr><td>Секція</td><td>4</td></tr>
