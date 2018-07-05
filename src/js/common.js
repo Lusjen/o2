@@ -150,214 +150,82 @@ var dropDownMenu = (function() {
 
 })();
 
-//preloader logic start
-// var preloader = (function() {
+//  =====================================================================================================================
+//  Preloader logic start
+var sagapreloaderAnimation = (function() {
+    var preloaderContainer = document.querySelector('.preloader-container');
 
-//     var NODES = {
-//       preloader: document.querySelector('.preloader'),
-//       loadOuterCircle: document.querySelector('.preloader__loading-circlce'),
-//       loadInnerCircle: document.querySelector('.preloader__inner-circle'),
-//       percents: document.querySelector('.preloader__loading-percents'),
-//       contentMask: document.querySelector('.preloader__logo-content-mask'),
-//       logo: document.querySelector('.preloader__logo')
-//     };
-  
-//     var offset = NODES.loadOuterCircle.getTotalLength();
-//     var startingRadius = parseInt(NODES.loadInnerCircle.getAttribute('r'));
-//     NODES.loadOuterCircle.style.strokeDasharray = offset;
-//     NODES.loadOuterCircle.style.strokeDashoffset = offset;
-    
-//     var finalRadius = window.innerWidth > window.innerHeight ? window.innerWidth : window.innerHeight;
+    function init() {
+        // sessionStorage.setItem('preloaderRan', true);
+        // var preloaderContainer = document.querySelector('.preloader-container');
+        var circle = document.querySelector('.svg-circle');
+        var loadingCircle = document.querySelector('.svg-loading-circle');
+        var loadingCircleText = document.querySelector('.svg-loading-circle__text');
 
-//     var currentDashOffset = parseInt(NODES.loadOuterCircle.style.strokeDashoffset);
+        var currentOffset = 236;
+        var startingOffset = currentOffset;
+        var step = 2.5;
 
-//     //how fast loading circle moves
-//     var outerStep = 6;
-//     //how fast inner circle grows
-//     var innerStep = 20;
-//     var maskOpacity = parseFloat(NODES.contentMask.style.opacity);
-//     //how fast opacity on green mask reduced
-//     var maskRevealStep = 0.01;
-//     var logoOpacity = 1;
-//     //how fast opacity on logo reduced
-//     var hideLogoStep = 0.012;
-  
-//     function _hidePreloader() {
-//       NODES.preloader.style.display = 'none';
-//     };
+        preloaderContainer.style.display = 'block';
 
-//     function _showPreloader() {
-//         NODES.preloader.style.display = 'block';
-//     }
+        // js based animation starts here
+        circle.addEventListener('animationstart', animateLoadingCircle);
+        function calculatePercents(current) {
+            return Math.ceil((100 - (current / startingOffset) * 100));
+        };
+        function animateLoadingCircle() {
+            currentOffset -= step;
+            loadingCircle.style.strokeDashoffset = currentOffset;
+            if(currentOffset >= 0) {
+                loadingCircleText.innerHTML = calculatePercents(currentOffset) + '%';
+                requestAnimationFrame(animateLoadingCircle);
+            } else {
+                preloaderContainer.classList.add('remove-svg');
+            }
+        };
 
-//     function _hideGreenContentMaks() {
-//         NODES.contentMask.display = 'none;'
-//     }
-  
-//     // Hide outer circle and percents
-//     function _hideOuterCircle() {
-//       NODES.loadOuterCircle.style.display = 'none';
-//       NODES.percents.style.display = 'none';
-//     };
-  
-//     function _calculatePerncets() {
-//       var perc = 100 - ((currentDashOffset / offset) * 100).toFixed();
-//       NODES.percents.innerHTML = perc + '%';
-//     };
-  
-//     function _animatePreloaderOuterCircle(e) {
-//         console.log(e)
-//       currentDashOffset-=outerStep
-//       if( currentDashOffset >= 0) {
-//         NODES.loadOuterCircle.style.strokeDashoffset=currentDashOffset;
-//         requestAnimationFrame(_animatePreloaderOuterCircle);
-//         _calculatePerncets();
-//       } else {
-//         // hide outer circle and percents and start frowing inner
-//         _hideOuterCircle();
-//         _animatePreloaderInnerCircle();
-//       }
-//     };
-  
-//     function _animatePreloaderInnerCircle() {
-//       if(startingRadius <= finalRadius + 300) {
-//         startingRadius+=innerStep;
-//         maskOpacity-=maskRevealStep;
-//         logoOpacity-=hideLogoStep;
-//         requestAnimationFrame(_animatePreloaderInnerCircle);
-//         //increase circle radius
-//         NODES.loadInnerCircle.setAttribute('r',startingRadius);
-//         //remove opacity from mask
-//         NODES.contentMask.style.opacity = maskOpacity;
-//         //remove opacity from logo
-//         NODES.logo.style.opacity = logoOpacity;
-//       } else {
-//         // remove preloader here
-//         _hidePreloader();
-//         showScrollBar();
-//       }
-//     };
-  
-//     function init() {
-//         hideScrollBar();
-//         _showPreloader();
-//         sessionStorage.setItem('preloaderActivated', true);
-//         _animatePreloaderOuterCircle();
-//     };
-  
-//     return {
-//       init: init,
-//       hidePreloader: _hidePreloader
-//     };
-  
-//   })();
+    };
 
-// // if(!sessionStorage.getItem('preloaderActivated')) {
-// //     preloader.init();
-// // }
-// //preloader.init();
-//preloader logick end
+    function checkDate() {
+      if(localStorage.getItem('preloader')===null) {
+        localStorage.setItem('preloader', Date.now());
+        return true;
+      }
+      var hour = 3600 * 1000;  
+      if(Date.now() - localStorage.getItem('preloader') < hour) {
+        return false;
+      } else {
+        localStorage.setItem('preloader', Date.now());
+        return true;
+      }
+    }
 
- 
-// var preloader2 = (function() {
-//     var canvas = document.querySelector('.myCanvas');
-//     var greenOverlay = document.querySelector('.canvas__green-overlay');
-//     var ctx = canvas.getContext('2d');
-  
-//     canvas.width = window.innerWidth;
-//     canvas.height = window.innerHeight;
-  
-//     var ch = canvas.height,
-//     cw = canvas.width,
-//     finalRadius = window.innerWidth > window.innerHeight ? window.innerWidth : window.innerHeight,
-//     innerCircleRadius = 100,
-//     outerCircleRadius = 120,
-//     progressStart = 0,
-//     progressStop = 2.1,
-//     progressCircleStep = 0.02, //Progress circle step
-//     percent,
-//     textXCoord = cw/2,
-//     innerCircleGrowvelocity = 10, // Inner circle grow velocity
-//     textYCoord = ch/2 + 140,
-//     greenOverlayOpacity = 0.8,
-//     greenOverlayOpacityStep = 0.01;
-//     loadColor = '#568752';
-  
-//     function _drawInnerCircle() {
-//       ctx.beginPath();
-//       ctx.arc(cw/2, ch/2, innerCircleRadius, 0*Math.PI, 2*Math.PI);
-//       ctx.globalCompositeOperation="destination-out";
-//       ctx.fill();
-//     };
-  
-//     function _drawProgressCircle(e) {
-//       //draw text
-//       //draw white rect over old text start
-//       ctx.fillStyle='#ffffff';
-//       ctx.fillRect(textXCoord-20, textYCoord - 15, 45, 20);
-//       //draw white rect over old text end
-  
-//       //draw new text start
-//       percent = ((progressStart/progressStop) * 100).toFixed();
-//       ctx.fillStyle = loadColor;
-//       ctx.font = "20px OpenSans";
-//       ctx.textAlign = 'center';
-//       ctx.fillText(percent+'%', textXCoord, textYCoord);
-//       //draw text end
-  
-//       // draw outer circle start
-//       ctx.lineWidth = 2;
-//       ctx.strokeStyle = '#ffffff'; 
-//       ctx.beginPath();
-//       ctx.arc(cw/2, ch/2, outerCircleRadius, 0*Math.PI, 2*Math.PI);
-//       ctx.stroke();
-//       ctx.strokeStyle = loadColor; 
-//       ctx.beginPath();
-//       ctx.arc(cw/2, ch/2, outerCircleRadius, 0*Math.PI, progressStart*Math.PI);
-//       ctx.globalCompositeOperation="source-over";
-//       ctx.stroke();
-//       progressStart+=progressCircleStep;
-//       // If fulle outer circle begin inner circle grow
-//       if(progressStart <= progressStop) {
-//         requestAnimationFrame(_drawProgressCircle);
-//       } else {
-//         _animateInnerCircleGrow();
-//       }
-//       // draw outer circle end
-//     };
-  
-//     function _animateInnerCircleGrow() {
-//       _drawInnerCircle();
-//       greenOverlayOpacity-=greenOverlayOpacityStep;
-//       greenOverlay.style.opacity = greenOverlayOpacity;
-//       innerCircleRadius+=innerCircleGrowvelocity;
-//       if(innerCircleRadius < finalRadius) {
-//         requestAnimationFrame(_animateInnerCircleGrow);
-//       } else {
-//         canvas.style.display = 'none';
-//         greenOverlay.style.display = 'none';
-//       }
-//     };
-  
-//     function init() {
-//         greenOverlay.style.display = 'block';
-//         canvas.style.display = 'block';
-//         sessionStorage.setItem('preloaderActivated', true);
-//         ctx.fillStyle = "#ffffff";
-//         ctx.fillRect(0, 0, cw, ch);
-//         _drawInnerCircle();
-//         _drawProgressCircle();
-//     };
-  
-//     return {
-//       init: init
-//     };
-  
-//   })();
-// if(!sessionStorage.getItem('preloaderActivated')) {
-//     preloader2.init();
-// }
-//preloader2.init();
+    return {
+        init: init,
+        preloaderContainer: preloaderContainer,
+        checkDate: checkDate
+    };
+
+
+})();
+
+// for session storage
+    // if(!sessionStorage.getItem('preloaderRan')) {
+    //     sagapreloaderAnimation.init();
+    // }
+
+// without session or local storage(every refresh page playing preloader) 
+    // sagapreloaderAnimation.init();
+
+// for local storage
+if(sagapreloaderAnimation.checkDate()) {
+  sagapreloaderAnimation.init();
+} else {
+  sagapreloaderAnimation.preloaderContainer.style.display = 'none';
+}
+
+//  Preloader logic end
+//  =====================================================================================================================
 
 // animation on scroll
 var animateHTMLCtrl = (function() {

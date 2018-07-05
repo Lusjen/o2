@@ -122,7 +122,7 @@
                             <img src="../dist/img/flat-plan/pdf.png" alt="icon" class="select-apartmens-bottom__button-icon">
                             Завантажити PDF
                         </a>
-                        <a href="#" class="select-apartmens-bottom__button">
+                        <a href="#" class="select-apartmens-bottom__button js-callback-form">
                             Дізнатися ціну
                         </a>
                         <img src="../dist/img/choose-apartment/nav.png" alt="image" class="select-apartmens-bottom__image">

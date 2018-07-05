@@ -1,3 +1,5 @@
+<?php include_once('includes/preloader.php'); ?>
+
 <header class="header-container">
     <div class="wrapper header">
     <div class="logo">
