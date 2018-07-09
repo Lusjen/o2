@@ -228,6 +228,19 @@ gulp.task('js-chooseSection', function() {
 });
 // choose-section end
 
+// documents page task
+gulp.task('js-documents', function() {
+	return gulp.src([
+		'src/js/libs/slick.min.js',
+		'src/js/documents.js'
+	])
+	.pipe(concat('documents.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'))
+	.pipe(browserSync.reload({stream: true}));
+});
+// documents page task end
+
 // main page start
 gulp.task('js', [
 	'common-js', 
@@ -243,6 +256,7 @@ gulp.task('js', [
 	'js-location',
 	'js-choose-apartment',
 	'js-chooseSection',
+	'js-documents',
 	'js-filter',], function() {
 	return gulp.src([
 		'src/js/libs/slick.min.js',
