@@ -103,3 +103,79 @@
         }
     }
 }
+
+.our-contact-list {
+    width: 1020/1180*100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto 0 auto;
+
+    &__item {
+        position: relative;
+        margin-bottom: 50px;
+        padding-left: 56px;
+        box-sizing: border-box;
+        &:before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: -5px;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: #98C45A;
+            background-image: url("../img/contacts/our-contact-sprite.png");
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &_1 {
+            width: 245/1024*100%;
+            margin-right: 55/1024*100%;
+            &:before {
+                background-position: -1px -1px; 
+            }
+        }
+
+        &_2 {
+            width: 315/1024*100%;
+            margin-right: 55/1024*100%;
+            &:before {
+                background-position: -283px -1px; 
+            }
+        }
+
+        &_3 {
+            width: 32.7%;
+            &:before {
+                background-position: 36px -1px; 
+            }
+        }
+
+        &_4 {
+            width: 100%;
+            &:before {
+                background-position: 36px -1px; 
+            }
+        }
+    }
+
+    &__heading {
+        font-size: 24/16*1rem;
+        letter-spacing: 1.5px;
+        margin-bottom: 15px;
+
+        &_margin-right {
+            margin-right: 60/1020*100%;; 
+        }
+    }
+
+    &__text {
+        font-size: 18/16*1rem;
+        line-height: 1.6;
+        &_margin-right {
+            margin-right: 50/1020*100%;; 
+        }
+    }
+}
