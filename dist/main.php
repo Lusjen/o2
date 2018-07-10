@@ -33,7 +33,6 @@
 
         <div class="wrapper hero__wrapper">
 
-
             <div class="hero__main">
                 <h1 class="heading hero__heading">
                     Ближче до природи
@@ -511,7 +510,7 @@
                 <a href="developer.php" class="main-page-hover-link">
                 <div class="info__item-image info__item-image_developer">
                     <div class="info__item-developer-logo">
-                        <img src="img/main/saga-logo-w.svg" alt="Saga Logo">
+                        <img src="img/main/saga-logo-w.png" alt="Saga Logo">
                     </div>
                 </div>
                 <div class="info__item-text">

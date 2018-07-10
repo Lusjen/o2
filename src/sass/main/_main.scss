@@ -501,7 +501,10 @@
 }
 .info__item-developer-logo {
     width: 200px;
-    margin: 75px auto 0 auto;
+    margin: 25px auto 0 auto;
+    img {
+        max-width: 100%;
+    }
 }
 
 .info__item-text {
