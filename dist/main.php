@@ -17,23 +17,167 @@
 
     <section class="hero main-page">
         <div class="hero__slider">
-            <div class="hero__slide hero__slide_1"></div>
-            <div class="hero__slide hero__slide_2"></div>
-            <div class="hero__slide hero__slide_3"></div>
-            <div class="hero__slide hero__slide_4"></div>
-            <div class="hero__slide hero__slide_5"></div>
-            <div class="hero__slide hero__slide_6"></div>
-            <div class="hero__slide hero__slide_7"></div>
-            <div class="hero__slide hero__slide_8"></div>
-            <div class="hero__slide hero__slide_9"></div>
-            <div class="hero__slide hero__slide_10"></div>
-            <div class="hero__slide hero__slide_11"></div>
-            <div class="hero__slide hero__slide_12"></div>
+            <div class="hero__slide hero__slide_1">
+                <div class="wrapper hero__wrapper">
+                    <div class="hero__main">
+                        <h1 class="heading hero__heading">
+                            Ближче до природи
+                        </h1>
+                        <p class="hero__message">
+                        Неподалік від Києва, серед величного лісу ми створюємо <br/> яскраву концепцію щасливого життя – життя у гармонії із природою.
+                        </p>
+                        <a class="btn btn_lightgreen btn__choose-apartment" href="#">Обрати квартиру</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__slide hero__slide_2">
+                <div class="wrapper hero__wrapper">
+                    <div class="hero__main">
+                        <h1 class="heading hero__heading">
+                            Ближче до природи
+                        </h1>
+                        <p class="hero__message">
+                        Неподалік від Києва, серед величного лісу ми створюємо <br/> яскраву концепцію щасливого життя – життя у гармонії із природою.
+                        </p>
+                        <a class="btn btn_lightgreen btn__choose-apartment" href="#">Обрати квартиру</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__slide hero__slide_3">
+                <div class="wrapper hero__wrapper">
+                    <div class="hero__main">
+                        <h1 class="heading hero__heading">
+                            Ближче до природи
+                        </h1>
+                        <p class="hero__message">
+                        Неподалік від Києва, серед величного лісу ми створюємо <br/> яскраву концепцію щасливого життя – життя у гармонії із природою.
+                        </p>
+                        <a class="btn btn_lightgreen btn__choose-apartment" href="#">Обрати квартиру</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__slide hero__slide_4">
+                <div class="wrapper hero__wrapper">
+                    <div class="hero__main">
+                        <h1 class="heading hero__heading">
+                            Ближче до природи
+                        </h1>
+                        <p class="hero__message">
+                        Неподалік від Києва, серед величного лісу ми створюємо <br/> яскраву концепцію щасливого життя – життя у гармонії із природою.
+                        </p>
+                        <a class="btn btn_lightgreen btn__choose-apartment" href="#">Обрати квартиру</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__slide hero__slide_5">
+                <div class="wrapper hero__wrapper">
+                    <div class="hero__main">
+                        <h1 class="heading hero__heading">
+                            Ближче до природи
+                        </h1>
+                        <p class="hero__message">
+                        Неподалік від Києва, серед величного лісу ми створюємо <br/> яскраву концепцію щасливого життя – життя у гармонії із природою.
+                        </p>
+                        <a class="btn btn_lightgreen btn__choose-apartment" href="#">Обрати квартиру</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__slide hero__slide_6">
+                <div class="wrapper hero__wrapper">
+                    <div class="hero__main">
+                        <h1 class="heading hero__heading">
+                            Ближче до природи
+                        </h1>
+                        <p class="hero__message">
+                        Неподалік від Києва, серед величного лісу ми створюємо <br/> яскраву концепцію щасливого життя – життя у гармонії із природою.
+                        </p>
+                        <a class="btn btn_lightgreen btn__choose-apartment" href="#">Обрати квартиру</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__slide hero__slide_7">
+                <div class="wrapper hero__wrapper">
+                    <div class="hero__main">
+                        <h1 class="heading hero__heading">
+                            Ближче до природи
+                        </h1>
+                        <p class="hero__message">
+                        Неподалік від Києва, серед величного лісу ми створюємо <br/> яскраву концепцію щасливого життя – життя у гармонії із природою.
+                        </p>
+                        <a class="btn btn_lightgreen btn__choose-apartment" href="#">Обрати квартиру</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__slide hero__slide_8">
+                <div class="wrapper hero__wrapper">
+                    <div class="hero__main">
+                        <h1 class="heading hero__heading">
+                            Ближче до природи
+                        </h1>
+                        <p class="hero__message">
+                        Неподалік від Києва, серед величного лісу ми створюємо <br/> яскраву концепцію щасливого життя – життя у гармонії із природою.
+                        </p>
+                        <a class="btn btn_lightgreen btn__choose-apartment" href="#">Обрати квартиру</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__slide hero__slide_9">
+                <div class="wrapper hero__wrapper">
+                    <div class="hero__main">
+                        <h1 class="heading hero__heading">
+                            Ближче до природи
+                        </h1>
+                        <p class="hero__message">
+                        Неподалік від Києва, серед величного лісу ми створюємо <br/> яскраву концепцію щасливого життя – життя у гармонії із природою.
+                        </p>
+                        <a class="btn btn_lightgreen btn__choose-apartment" href="#">Обрати квартиру</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__slide hero__slide_10">
+                <div class="wrapper hero__wrapper">
+                    <div class="hero__main">
+                        <h1 class="heading hero__heading">
+                            Ближче до природи
+                        </h1>
+                        <p class="hero__message">
+                        Неподалік від Києва, серед величного лісу ми створюємо <br/> яскраву концепцію щасливого життя – життя у гармонії із природою.
+                        </p>
+                        <a class="btn btn_lightgreen btn__choose-apartment" href="#">Обрати квартиру</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__slide hero__slide_11">
+                <div class="wrapper hero__wrapper">
+                    <div class="hero__main">
+                        <h1 class="heading hero__heading">
+                            Ближче до природи
+                        </h1>
+                        <p class="hero__message">
+                        Неподалік від Києва, серед величного лісу ми створюємо <br/> яскраву концепцію щасливого життя – життя у гармонії із природою.
+                        </p>
+                        <a class="btn btn_lightgreen btn__choose-apartment" href="#">Обрати квартиру</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__slide hero__slide_12">
+                <div class="wrapper hero__wrapper">
+                    <div class="hero__main">
+                        <h1 class="heading hero__heading">
+                            Ближче до природи
+                        </h1>
+                        <p class="hero__message">
+                        Неподалік від Києва, серед величного лісу ми створюємо <br/> яскраву концепцію щасливого життя – життя у гармонії із природою.
+                        </p>
+                        <a class="btn btn_lightgreen btn__choose-apartment" href="#">Обрати квартиру</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="wrapper hero__wrapper">
 
-            <div class="hero__main">
+            <!-- <div class="hero__main">
                 <h1 class="heading hero__heading">
                     Ближче до природи
                 </h1>
@@ -41,7 +185,7 @@
                 Неподалік від Києва, серед величного лісу ми створюємо <br/> яскраву концепцію щасливого життя – життя у гармонії із природою.
                 </p>
                 <a class="btn btn_lightgreen btn__choose-apartment" href="#">Обрати квартиру</a>
-            </div>
+            </div> -->
             <div class="hero__bottom-container">
                 <div class="hero__bottom">
                     <a class="btn btn_transparent btn__order-call js-callback-form" href="#" >Замовити дзвінок</a>
