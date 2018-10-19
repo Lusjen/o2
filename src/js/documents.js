@@ -4,7 +4,8 @@ $('.document-slider').slick({
   	slidesToScroll: 1,
   	speed: 1200,
   	autoplaySpeed: 500,
-  	arrows: true,
+    arrows: true,
+    infinite: false,
   	prevArrow: $('.document-slider__button_prev'),
 	nextArrow: $('.document-slider__button_next'),
   	responsive: [
@@ -12,7 +13,6 @@ $('.document-slider').slick({
       breakpoint: 1000,
       settings: {
         slidesToShow: 3,
-        infinite: true
       }
     },
     {
@@ -22,5 +22,5 @@ $('.document-slider').slick({
       }
     }
     ]
-    
   });
+

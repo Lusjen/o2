@@ -232,6 +232,7 @@ gulp.task('js-chooseSection', function() {
 gulp.task('js-documents', function() {
 	return gulp.src([
 		'src/js/libs/slick.min.js',
+		'src/js/libs/jquery.fancybox.min.js',
 		'src/js/documents.js'
 	])
 	.pipe(concat('documents.min.js'))
